@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fake News Detector</title>
+    <link rel="stylesheet" href="news.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>📰 Fake News Detector</h1>
+
+    <textarea id="newsInput" placeholder="Enter news text..."></textarea>
+
+    <button onclick="checkNews()">Analyze News</button>
+
+    <div class="result-box" id="resultBox">
+        <p class="prediction-text">Prediction: <span id="prediction">-</span></p>
+
+        <div class="confidence-container">
+            <div id="confidenceBar"></div>
+        </div>
+        <p class="confidence-text">Confidence: <span id="confidence">-</span></p>
+    </div>
+</div>
+
+<script src="news.js"></script>
+</body>
+</html>
